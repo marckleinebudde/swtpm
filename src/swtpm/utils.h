@@ -49,6 +49,6 @@ typedef void (*sighandler_t)(int);
 int install_sighandlers(int pipefd[2], sighandler_t handler);
 int change_process_owner(const char *owner);
 
-void tpmlib_debug_libtpms_parameters(void);
+void tpmlib_debug_libtpms_parameters(TPMLIB_TPMVersion);
 
 #endif /* _SWTPM_UTILS_H_ */
